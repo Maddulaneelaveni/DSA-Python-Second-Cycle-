@@ -25,3 +25,4 @@ def insertion_sort(arr):
             j -= 1
         arr[j + 1] = key
     return arr
+# Time complexity : O(n²) because of the nested loops, where n is the number of elements in the array. The outer loop runs n times, and the inner loop can run up to n times in the worst case.
