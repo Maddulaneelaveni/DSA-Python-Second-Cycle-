@@ -26,3 +26,5 @@ def insertion_sort(arr):
         arr[j + 1] = key
     return arr
 # Time complexity : O(n²) because of the nested loops, where n is the number of elements in the array. The outer loop runs n times, and the inner loop can run up to n times in the worst case.
+
+# Insertion Sort has a best-case time complexity of O(n) when the array is already sorted, as the inner loop will not execute. The average and worst-case time complexities are O(n²) due to the nested loops required for comparisons and shifts.
