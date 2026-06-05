@@ -5,3 +5,5 @@
 # Algorithm Steps :
 # Start from the second element (index 1) and compare it with the elements before it.
 # If the current element is smaller than the previous elements, shift the larger elements one position to the right.
+# Insert the current element into its correct position in the sorted portion of the array.
+# Repeat the process for all elements until the entire array is sorted.
