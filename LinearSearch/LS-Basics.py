@@ -37,6 +37,7 @@ def linear_search(nums, target):
 nums = [10, 25, 30, 45, 50]
 print(linear_search(nums, 45))
 
+# Output: 3 (since 45 is at index 3 in the array)
 
 # Time complexity :
 
