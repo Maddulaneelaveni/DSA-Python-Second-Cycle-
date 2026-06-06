@@ -39,6 +39,22 @@ print(linear_search(nums, 45))
 
 # Output: 3 (since 45 is at index 3 in the array)
 
+# Example:
+
+def linear_search(arr, key):
+    for i in range(len(arr)):
+        if arr[i] == key:
+            return i
+    return -1
+arr = [5, 3, 2, 8, 1]
+key = 2
+result = linear_search(arr, key)
+if result != -1:
+    print(f"Element found at index: {result}")  
+else:
+    print("Element not found in the array.")    
+# Output: Element found at index: 2 (since 2 is at index 2 in the array)
+
 # Time complexity :
 
 # Best Case: O(1) - when the target is the first element, as there is only one comparison.
