@@ -52,3 +52,11 @@ print(linear_search(nums, 45))
 
 # Disadvantages:
 # Inefficient for large datasets, Time-consuming, Not suitable for sorted arrays, High time complexity, Checks every element, Not efficient compared to Binary Search
+
+# Common Patterns include :
+# 1. Finding the first occurrence of a target value in an array.
+# 2. Finding the last occurrence of a target value in an array.
+# 3. Counting the number of occurrences of a target value in an array.
+# 4. Finding the maximum or minimum value in an array.
+# 5.Finding an element
+# 6.Checking existence
