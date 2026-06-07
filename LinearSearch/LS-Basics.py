@@ -49,3 +49,6 @@ print(linear_search(nums, 45))
 
 # Advantages:
 # Easy to understand, Works on unsorted arrays, No preprocessing needed, Simple implementation
+
+# Disadvantages:
+# Inefficient for large datasets, Time-consuming, Not suitable for sorted arrays, High time complexity, Checks every element, Not efficient compared to Binary Search
