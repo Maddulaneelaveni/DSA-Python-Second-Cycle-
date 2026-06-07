@@ -45,3 +45,7 @@ print(linear_search(nums, 45))
 # Average Case: O(n) - on average, it will check half of the elements before finding the target or concluding it's not present.
 
 # Space Complexity: O(1) - No extra space is used, as the search is performed in-place without any additional data structures.
+
+
+# Advantages:
+# Easy to understand, Works on unsorted arrays, No preprocessing needed, Simple implementation
