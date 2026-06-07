@@ -42,3 +42,4 @@ print(linear_search(nums, 45))
 
 # Best Case: O(1) - when the target is the first element, as there is only one comparison.
 # Worst Case: O(n) - when the target is the last element or not present at all, as it requires checking every element.
+# Average Case: O(n) - on average, it will check half of the elements before finding the target or concluding it's not present.
