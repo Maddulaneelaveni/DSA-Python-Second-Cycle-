@@ -39,3 +39,5 @@ print(linear_search(nums, 45))
 
 
 # Time complexity :
+
+# Best Case: O(1) - when the target is the first element, as there is only one comparison.
