@@ -36,3 +36,6 @@ def linear_search(nums, target):
     return -1
 nums = [10, 25, 30, 45, 50]
 print(linear_search(nums, 45))
+
+
+# Time complexity :
