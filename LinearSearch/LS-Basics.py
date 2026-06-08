@@ -23,3 +23,16 @@ for each element in array:
     if element == target:
         return index
 return -1
+
+
+# Python implementation of Linear Search :
+def linear_search(nums, target):
+ # Loop through every element
+    for i in range(len(nums)):
+# Check if current element equals target
+        if nums[i] == target:
+            return i
+# Target not found
+    return -1
+nums = [10, 25, 30, 45, 50]
+print(linear_search(nums, 45))
