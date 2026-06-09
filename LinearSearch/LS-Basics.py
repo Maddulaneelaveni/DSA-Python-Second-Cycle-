@@ -17,3 +17,9 @@
 # It checks each element one by one from the beginning until:
 # The target element is found, or
 # The array ends.
+
+# Algorithm : 
+for each element in array:
+    if element == target:
+        return index
+return -1
