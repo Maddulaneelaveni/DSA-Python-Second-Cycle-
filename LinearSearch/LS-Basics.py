@@ -1,0 +1,19 @@
+# Linear Search :
+
+# Linear Search checks each element until the desired value is found or list ends.
+
+# Time Complexity: O(n)
+
+# Algorithm Steps :
+
+# 1. Start from the first element of the array.
+# 2. Compare the current element with the target value.
+# 3. If both are equal, return the position/index.
+# 4. Otherwise, move to the next element.
+# 5. Repeat until the element is found or the array ends.
+# 6. If the array ends and the element is not found, return -1.
+
+# Key Idea : Searches elements one by one sequentially.
+# It checks each element one by one from the beginning until:
+# The target element is found, or
+# The array ends.
