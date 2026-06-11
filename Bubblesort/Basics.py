@@ -17,3 +17,5 @@
 
 #Key Idea: The largest element "bubbles up" to the end after every pass.
 
+# Example : [5, 3, 8, 4, 2]
+
