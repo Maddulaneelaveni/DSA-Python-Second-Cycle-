@@ -18,4 +18,8 @@
 #Key Idea: The largest element "bubbles up" to the end after every pass.
 
 # Example : [5, 3, 8, 4, 2]
+# Pass 1: 5 3 8 4 2 → 3 5 4 2 8
+# Pass 2: 3 5 4 2 8 → 3 4 2 5 8
+#Pass 3: 3 4 2 5 8 → 3 2 4 5 8
+Pass 4: 3 2 4 5 8 → 2 3 4 5 8
 
