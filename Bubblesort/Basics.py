@@ -33,3 +33,4 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
 
+# Time complexity : O(n²) because of the nested loops, where n is the number of elements in the array. The outer loop runs n times, and the inner loop also runs up to n times in the worst case.
