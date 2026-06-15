@@ -34,3 +34,4 @@ def bubble_sort(arr):
     return arr
 
 # Time complexity : O(n²) because of the nested loops, where n is the number of elements in the array. The outer loop runs n times, and the inner loop also runs up to n times in the worst case.
+# Time complexity is same for all cases (best, average, worst) because Bubble Sort always requires two nested loops to compare and swap elements, regardless of the initial order of the array.
