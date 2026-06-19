@@ -32,7 +32,7 @@ def insertion_sort(arr):
 # Insertion Sort1 - HackerRank Problem
 # Problem Statement:
 # Given an array of integers, sort the array using the insertion sort algorithm and print the array after each iteration of the outer loop.
-# akes only the last element and inserts it in the correct position.
+# Takes only the last element and inserts it in the correct position.
 def insertionSort1(n, arr):
     value = arr[-1]
     i = n - 2
