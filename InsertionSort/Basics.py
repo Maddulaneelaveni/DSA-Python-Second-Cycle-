@@ -12,7 +12,7 @@
 # Pass 1: 5 3 8 4 2 → 3 5 8 4 2
 # Pass 2: 3 5 8 4 2 → 3 5 8 4 2 (no change)
 # Pass 3: 3 5 8 4 2 → 3 4 5 8 2
-# Pass 4: 3 4 5 8 2 → 2 3 4 5 8
+
 
 # Code :
 def insertion_sort(arr):
