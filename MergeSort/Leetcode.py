@@ -1,10 +1,8 @@
 # 1. 912- Leetcode Problem- Sort an Array
 
 # You are given an unsorted array.
-
-nums = [5, 2, 3, 1]
-
-You need to sort it in ascending order.
+# nums = [5, 2, 3, 1]
+# You need to sort it in ascending order.
 
 Expected output:
 
