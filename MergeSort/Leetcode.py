@@ -4,9 +4,7 @@
 # nums = [5, 2, 3, 1]
 # You need to sort it in ascending order.
 
-Expected output:
-
-[1, 2, 3, 5]
+# Expected output: [1, 2, 3, 5]
 Constraints
 You cannot simply use sort().
 Interviewers expect you to implement a sorting algorithm.
