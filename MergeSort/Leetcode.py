@@ -7,5 +7,5 @@
 
 # Constraints
 # You cannot simply use sort().
-Interviewers expect you to implement a sorting algorithm.
-Merge Sort is one of the best solutions because it runs in O(n log n).
+# Interviewers expect you to implement a sorting algorithm.
+# Merge Sort is one of the best solutions because it runs in O(n log n).
