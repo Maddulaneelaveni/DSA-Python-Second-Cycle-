@@ -38,3 +38,5 @@ def merge(left, right):
 nums = [5, 2, 3, 1]
 sorted_nums = merge_sort(nums)
 print("Sorted Array:", sorted_nums)
+
+# Output: Sorted Array: [1, 2, 3, 5]
