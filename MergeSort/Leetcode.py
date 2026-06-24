@@ -40,3 +40,5 @@ sorted_nums = merge_sort(nums)
 print("Sorted Array:", sorted_nums)
 
 # Output: Sorted Array: [1, 2, 3, 5]
+
+# Time Complexity: O(n log n) because the array is divided into halves (log n) and each half is merged (n).
