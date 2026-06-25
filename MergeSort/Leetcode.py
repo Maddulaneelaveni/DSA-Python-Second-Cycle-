@@ -44,4 +44,3 @@ print("Sorted Array:", sorted_nums)
 
 
 
-# 2. 88 - Leetcode Problem- Merge Sorted Array
