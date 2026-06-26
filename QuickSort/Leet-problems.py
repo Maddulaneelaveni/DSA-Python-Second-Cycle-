@@ -8,3 +8,9 @@
 # Quick Sort selects one element called the pivot, places all smaller elements to its left and all larger elements to its right, then recursively sorts both parts.
 
 # Key Idea: Partition the array around a pivot and recursively sort the left and right partitions.
+
+# Case	       Time Complexity	     Reason
+
+# Best Case	    O(n log n)	       Pivot divides the array into nearly equal halves at each step.
+# Average Case	O(n log n)	       Random pivots usually produce reasonably balanced partitions.
+# Worst Case	O(n²)	            Pivot is always the smallest or largest element, creating highly unbalanced partitions (e.g., one side has n-1 elements and the other has 0).
