@@ -21,3 +21,9 @@
 # The array is split into roughly half-sized parts.
 # The number of levels is about log n.
 # So: O(n) × O(log n) = O(n log n)
+
+# Advantages
+# Very fast on average.
+# Average time complexity is O(n log n).
+# Widely used in practice.
+# Works efficiently for large datasets.
