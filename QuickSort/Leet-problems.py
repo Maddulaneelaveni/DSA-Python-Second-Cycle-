@@ -20,8 +20,4 @@
 # Partitioning all elements takes O(n) time.
 # The array is split into roughly half-sized parts.
 # The number of levels is about log n.
-So:
-
-O(n) × O(log n)
-
-= O(n log n)
+# So: O(n) × O(log n) = O(n log n)
