@@ -56,3 +56,24 @@
 # Recursively apply Quick Sort on the right partition.
 # Combine the sorted left partition, Pivot, and sorted right partition.
 # Continue until all partitions contain one or zero elements.
+
+
+# Example Array:
+# arr = [8, 3, 1, 7, 0, 10, 2]
+# RECURSION TREE
+
+
+ #                   [8,3,1,7,0,10,2]
+ #                          7
+#                 /                   \
+#        [3,1,0,2]                 [8,10]
+ #             0                       10
+ #         /     \                  /    \
+ #       []    [3,1,2]            [8]    []
+ #                1
+ #             /     \
+ #           []     [3,2]
+ #                     2
+ #                  /     \
+   #              []      [3]
+
