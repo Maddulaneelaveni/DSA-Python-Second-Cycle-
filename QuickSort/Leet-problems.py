@@ -45,3 +45,14 @@
       ↓
 # Combine:
 # Sorted Left + Pivot + Sorted Right
+
+# Algorithm Steps
+# Select a Pivot element.
+# Partition the array into:
+# Elements smaller than Pivot
+# Pivot element
+# Elements greater than Pivot
+# Recursively apply Quick Sort on the left partition.
+# Recursively apply Quick Sort on the right partition.
+# Combine the sorted left partition, Pivot, and sorted right partition.
+# Continue until all partitions contain one or zero elements.
