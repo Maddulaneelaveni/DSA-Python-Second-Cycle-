@@ -32,3 +32,16 @@
 # Worst-case time complexity is O(n²) if pivots are chosen poorly.
 # Recursive implementation can lead to deep recursion in the worst case.
 # The version shown here is not in-place because it creates new lists (left, middle, and right), so it uses extra memory.
+
+# Simple Flow :
+# Choose Pivot
+      ↓
+# Partition into:
+# Left (< Pivot)
+# Pivot (= Pivot)
+# Right (> Pivot)
+      ↓
+# Recursively sort Left and Right
+      ↓
+# Combine:
+# Sorted Left + Pivot + Sorted Right
