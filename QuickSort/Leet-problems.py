@@ -35,14 +35,14 @@
 
 # Simple Flow :
 # Choose Pivot
-      ↓
+#       ↓
 # Partition into:
 # Left (< Pivot)
 # Pivot (= Pivot)
 # Right (> Pivot)
-      ↓
+##     ↓
 # Recursively sort Left and Right
-      ↓
+ #     ↓
 # Combine:
 # Sorted Left + Pivot + Sorted Right
 
@@ -76,4 +76,46 @@
  #                     2
  #                  /     \
    #              []      [3]
+
+
+# Code :
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr)//2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+
+
+# Sort an array - Leetcode 912
+
+class Solution:
+    def sortArray(self, nums):
+        def quick_sort(arr):
+            if len(arr) <= 1:
+                return arr
+            pivot = arr[len(arr)//2]
+            left = [x for x in arr if x < pivot]
+            middle = [x for x in arr if x == pivot]
+            right = [x for x in arr if x > pivot]
+            return quick_sort(left) + middle + quick_sort(right)
+        return quick_sort(nums)
+    
+# Input:
+nums = [5,2,3,1]
+# Output:
+[1,2,3,5]
+
+
+# Top K Frequent Elements - Leetcode
+from collections import Counter
+class Solution:
+    def topKFrequent(self, nums, k):
+        count = Counter(nums)
+        return [x for x,_ in count.most_common(k)]
+    
+
+
 
