@@ -1,0 +1,7 @@
+Counting sort :
+counting sort is a non comparison based sorting algorithm. Instead of comparing elements like Mergesort or Bubblesort, it counts how many times each element appears and then reconstructs the sorted array.
+- It works effeciently when the numbers are integers and range of value is small.
+
+--> WHY DO WE NEED COUNTING SORT?
+- Many algorithms like Bubblesort, Mergesort, Quicksort compare elements and require many comparions.
+- 
