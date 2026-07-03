@@ -4,4 +4,5 @@ counting sort is a non comparison based sorting algorithm. Instead of comparing 
 
 --> WHY DO WE NEED COUNTING SORT?
 - Many algorithms like Bubblesort, Mergesort, Quicksort compare elements and require many comparions.
-- 
+- Countingsort avoids comparisons completely, Instead it asks "How many times does each number appear?"
+- This makes it much faster when the range of value is small.
