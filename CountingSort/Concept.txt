@@ -14,3 +14,4 @@ counting sort is a non comparison based sorting algorithm. Instead of comparing 
 - Works on integer data.
 - Very fast for small ranges and not stable for large ranges.
 - Uses extra memory
+- Linear sorting algorithm
