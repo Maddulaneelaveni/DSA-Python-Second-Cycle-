@@ -15,3 +15,6 @@ counting sort is a non comparison based sorting algorithm. Instead of comparing 
 - Very fast for small ranges and not stable for large ranges.
 - Uses extra memory
 - Linear sorting algorithm
+
+---> Time Complexity :
+o(n+k)
