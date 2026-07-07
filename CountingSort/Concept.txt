@@ -18,3 +18,6 @@ counting sort is a non comparison based sorting algorithm. Instead of comparing 
 
 ---> Time Complexity :
 o(n+k)
+
+---> Space Complexity :
+o(n+k)
