@@ -21,7 +21,8 @@ print(stable_counting_sort(arr))
 # Counts frequencies.
 # Directly writes sorted values back.
 # Not stable.
-# Stable Counting Sort
+
+
 # Counts frequencies.
 # Converts frequencies to prefix sums (cumulative counts).
 # Traverses the original array from right to left.
