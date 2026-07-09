@@ -15,3 +15,15 @@ def stable_counting_sort(arr):
     return output
 arr = [4, 2, 2, 8, 3, 3, 1]
 print(stable_counting_sort(arr))
+
+# Difference
+# Normal Counting Sort
+# Counts frequencies.
+# Directly writes sorted values back.
+# Not stable.
+# Stable Counting Sort
+# Counts frequencies.
+# Converts frequencies to prefix sums (cumulative counts).
+# Traverses the original array from right to left.
+# Places elements in an output array.
+# Stable, so it preserves the relative order of equal elements. This is why Radix Sort uses Stable Counting Sort.
