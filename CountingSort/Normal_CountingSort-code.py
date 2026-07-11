@@ -18,3 +18,5 @@ def counting_sort(arr):
             count[i] -= 1
     # Return sorted array
     return arr
+arr = [4, 2, 2, 8, 3, 3, 1]
+print(counting_sort(arr))
