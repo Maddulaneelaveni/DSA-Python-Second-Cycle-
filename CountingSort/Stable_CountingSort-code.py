@@ -1,17 +1,23 @@
 def stable_counting_sort(arr):
+    # Find the maximum element
     max_val = max(arr)
+    # Create count array
     count = [0] * (max_val + 1)
-    # Step 1: Count frequency
+    # Count frequency of each element
     for num in arr:
         count[num] += 1
-    # Step 2: Prefix Sum
+    # Convert frequency to cumulative (prefix sum)
     for i in range(1, len(count)):
         count[i] += count[i - 1]
+    # Create output array
     output = [0] * len(arr)
-    # Step 3: Traverse from right to left
+    # Traverse from right to left for stability
     for i in range(len(arr) - 1, -1, -1):
+        # Place element at its correct position
         output[count[arr[i]] - 1] = arr[i]
+        # Decrease count for the next occurrence
         count[arr[i]] -= 1
+    # Return stable sorted array
     return output
 arr = [4, 2, 2, 8, 3, 3, 1]
 print(stable_counting_sort(arr))
