@@ -22,6 +22,9 @@ def stable_counting_sort(arr):
 arr = [4, 2, 2, 8, 3, 3, 1]
 print(stable_counting_sort(arr))
 
+# Time Complexity: O(n + k)
+# Space Complexity: O(n + k)
+
 # Difference
 # Normal Counting Sort
 # Counts frequencies.
