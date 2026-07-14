@@ -23,3 +23,7 @@ print(counting_sort(arr))
 
 # Time Complexity: O(n + k)
 # Space Complexity: O(k)
+
+# Applications of  Normal Counting Sort:
+# 1. Sorting integers in a small range.
+# 
