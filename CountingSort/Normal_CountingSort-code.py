@@ -21,3 +21,9 @@ def counting_sort(arr):
 arr = [4, 2, 2, 8, 3, 3, 1]
 print(counting_sort(arr))
 
+# Time Complexity: O(n + k)
+# Space Complexity: O(k)
+
+# Applications of  Normal Counting Sort:
+# 1. Sorting integers in a small range.
+# 

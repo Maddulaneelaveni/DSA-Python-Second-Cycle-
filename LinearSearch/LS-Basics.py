@@ -39,6 +39,7 @@ print(linear_search(nums, 45))
 
 # Output: 3 (since 45 is at index 3 in the array)
 
+
 # Example:
 
 def linear_search(arr, key):

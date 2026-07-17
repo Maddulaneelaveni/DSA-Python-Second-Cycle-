@@ -1,0 +1,240 @@
+=========================
+TWO POINTERS TECHNIQUE
+=========================
+
+Definition
+----------
+Two Pointers is an algorithmic technique where two indices (pointers) are used
+to traverse a data structure (usually an array or string). Instead of using
+nested loops, the pointers move based on certain conditions, helping reduce
+time complexity.
+
+The pointers may:
+1. Move towards each other.
+2. Move in the same direction.
+3. Move at different speeds.
+
+--------------------------------------------------
+
+Why do we use Two Pointers?
+---------------------------
+It helps:
+• Reduce unnecessary comparisons.
+• Optimize brute-force solutions.
+• Reduce time complexity from O(n²) to O(n) in many problems.
+• Solve array and string problems efficiently.
+
+--------------------------------------------------
+
+Time Complexity
+---------------
+
+Best Case:
+O(n)
+
+Average Case:
+O(n)
+
+Worst Case:
+O(n)
+
+Reason:
+Each pointer moves at most n times.
+Even though there are two pointers, each element is visited only once or a few times.
+
+--------------------------------------------------
+
+Space Complexity
+----------------
+
+O(1)
+
+Reason:
+Only a few extra variables (left, right, etc.) are used.
+
+--------------------------------------------------
+
+Advantages
+----------
+
+1. Very efficient.
+2. Reduces nested loops.
+3. Constant extra memory.
+4. Easy to implement.
+5. Useful in many interview problems.
+
+--------------------------------------------------
+
+Disadvantages
+-------------
+
+1. Doesn't work for every problem.
+2. Often requires sorted arrays.
+3. Pointer movement can be tricky.
+4. Wrong pointer updates may cause infinite loops.
+
+--------------------------------------------------
+
+When to Use Two Pointers?
+-------------------------
+
+Use it when:
+✔ Array is sorted.
+✔ Need to find pairs.
+✔ Need to remove duplicates.
+✔ Need to reverse an array/string.
+✔ Need to compare elements from both ends.
+✔ Need to solve sliding window-like problems.
+✔ Need to partition arrays.
+
+--------------------------------------------------
+
+Types of Two Pointers
+---------------------
+
+1. Opposite Direction
+   • One pointer starts from left.
+   • One pointer starts from right.
+   • They move toward each other.
+
+Example:
+[left] -----------> <----------- [right]
+
+Used in:
+• Two Sum II
+• Reverse String
+• Container With Most Water
+• Valid Palindrome
+
+--------------------------------------------------
+
+2. Same Direction
+   • Both pointers start from left.
+   • One pointer moves faster.
+   • Often called Slow & Fast pointers.
+
+Example:
+
+slow
+↓
+
+fast
+↓
+
+0 1 2 3 4 5
+
+Used in:
+• Remove Duplicates
+• Remove Element
+• Move Zeroes
+• Merge Sorted Arrays
+
+--------------------------------------------------
+
+3. Fast and Slow Pointer
+-------------------------
+
+One pointer moves faster than the other.
+
+Used in:
+• Linked List Cycle
+• Find Middle of Linked List
+• Happy Number
+
+--------------------------------------------------
+
+4. Sliding Window (Special Form)
+--------------------------------
+
+Both pointers move forward while maintaining a window.
+
+Used in:
+• Longest Substring Without Repeating Characters
+• Minimum Size Subarray Sum
+• Maximum Consecutive Ones
+
+--------------------------------------------------
+
+General Algorithm (Opposite Direction)
+--------------------------------------
+
+1. Initialize
+      left = 0
+      right = n-1
+
+2. While left < right
+
+3. Check condition
+
+4. If answer found
+      return
+
+5. Else move one pointer
+
+6. Repeat
+
+--------------------------------------------------
+
+General Algorithm (Same Direction)
+----------------------------------
+
+1. Initialize slow = 0
+
+2. Iterate fast from left to right
+
+3. Update answer
+
+4. Move slow when needed
+
+--------------------------------------------------
+
+Real World Examples
+-------------------
+
+1. Two people searching from opposite ends of a bookshelf.
+
+2. Elevator moving up while another comes down.
+
+3. Finding two people whose ages add to a target.
+
+4. Checking whether a word is a palindrome.
+
+5. Compressing duplicate records.
+
+
+How to Identify Two Pointer Problems
+------------------------------------
+
+Look for words like:
+✔ Pair
+✔ Sorted array
+✔ Remove duplicates
+✔ Reverse
+✔ Palindrome
+✔ Merge
+✔ Closest sum
+✔ Triplets
+✔ Window
+✔ Consecutive
+
+--------------------------------------------------
+
+Common Mistakes
+---------------
+
+✘ Forgetting to move pointers.
+✘ Moving the wrong pointer.
+✘ Using it on unsorted arrays when sorting is required.
+✘ Infinite loops.
+✘ Incorrect loop condition.
+
+--------------------------------------------------
+
+Key Takeaways
+-------------
+
+• Uses two indices.
+• Usually O(n).
+• O(1) extra space.
+• Great optimization over brute force.
+• Extremely common in coding interviews.
