@@ -230,3 +230,11 @@ Common Mistakes
 
 --------------------------------------------------
 
+Key Takeaways
+-------------
+
+• Uses two indices.
+• Usually O(n).
+• O(1) extra space.
+• Great optimization over brute force.
+• Extremely common in coding interviews.
