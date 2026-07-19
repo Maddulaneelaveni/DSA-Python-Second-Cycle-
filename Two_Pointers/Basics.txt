@@ -75,7 +75,17 @@ Disadvantages
 
 --------------------------------------------------
 
+When to Use Two Pointers?
+-------------------------
 
+Use it when:
+✔ Array is sorted.
+✔ Need to find pairs.
+✔ Need to remove duplicates.
+✔ Need to reverse an array/string.
+✔ Need to compare elements from both ends.
+✔ Need to solve sliding window-like problems.
+✔ Need to partition arrays.
 
 --------------------------------------------------
 
