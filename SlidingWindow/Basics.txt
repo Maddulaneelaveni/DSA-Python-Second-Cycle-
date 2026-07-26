@@ -384,12 +384,3 @@ Variable Window
 • Longest unique word sequence.
 • Shortest route satisfying a condition.
 
-Key Takeaways :
-
-• Sliding Window is an optimization technique.
-• Mostly used on arrays and strings.
-• Converts many O(n²) solutions into O(n).
-• Two main types:
-    1. Fixed Size
-    2. Variable Size
-• Learn Fixed Window first because Variable Window is built on the same idea.
