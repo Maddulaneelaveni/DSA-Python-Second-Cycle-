@@ -1,0 +1,395 @@
+=========================================
+SLIDING WINDOW
+=========================================
+
+Definition
+----------
+Sliding Window is an optimization technique used to solve problems involving
+arrays or strings by maintaining a "window" (a continuous subset of elements)
+that slides across the data instead of recalculating everything repeatedly.
+
+Instead of checking every possible subarray or substring (brute force),
+we reuse previous computations by adding the new element entering the window
+and removing the element leaving the window.
+
+--------------------------------------------------
+
+Why Sliding Window?
+-------------------
+
+Brute Force:
+- Generate every subarray/substring.
+- Recalculate values every time.
+- Usually O(n²) or O(n³).
+
+Sliding Window:
+- Reuses previous computations.
+- Each element enters and leaves the window at most once.
+- Usually O(n).
+
+--------------------------------------------------
+
+Types of Sliding Window
+-----------------------
+
+There are TWO major types:
+
+1. Fixed Size Sliding Window
+2. Variable Size Sliding Window
+
+The difference lies in whether the window size remains constant or changes.
+
+==================================================
+1. FIXED SIZE SLIDING WINDOW
+==================================================
+
+Definition
+----------
+The window size is fixed throughout the algorithm.
+
+We slide the window one step at a time by:
+• Removing the leftmost element.
+• Adding the next right element.
+
+Window size NEVER changes.
+
+Example
+-------
+
+Array:
+
+[2, 5, 1, 8, 2, 9, 1]
+
+Window Size = 3
+
+Window 1
+
+[2 5 1] 8 2 9 1
+
+Slide →
+
+2 [5 1 8] 2 9 1
+
+Slide →
+
+2 5 [1 8 2] 9 1
+
+Slide →
+
+2 5 1 [8 2 9] 1
+
+Slide →
+
+2 5 1 8 [2 9 1]
+
+Window size is always 3.
+
+--------------------------------------------------
+
+How does it work?
+
+Step 1:
+Build the first window.
+
+Step 2:
+Process it.
+
+Step 3:
+Move one step.
+
+Step 4:
+Remove left element.
+
+Step 5:
+Add new right element.
+
+Repeat until end.
+
+--------------------------------------------------
+
+When to use Fixed Window?
+
+Use when the question contains:
+
+✔ Size K
+✔ Exactly K elements
+✔ Window of length K
+✔ Every K consecutive elements
+✔ Fixed length substring
+✔ Average of K elements
+✔ Maximum sum of K elements
+
+--------------------------------------------------
+
+Examples
+
+Maximum Sum of Size K
+
+Find maximum sum of every 3 consecutive elements.
+
+Average of K Elements
+
+Find average of every window of size 5.
+
+Maximum Vowels
+
+Find maximum vowels in every substring of length K.
+
+--------------------------------------------------
+
+Advantages
+
+• Very fast
+• O(n) time
+• Easy implementation
+• Constant extra memory
+
+--------------------------------------------------
+
+Disadvantages
+
+• Only works when window size is fixed.
+• Cannot solve dynamic-length problems.
+
+--------------------------------------------------
+
+Complexity
+
+Time : O(n)
+
+Reason:
+Every element enters the window once and leaves once.
+
+Space : O(1)
+
+==================================================
+2. VARIABLE SIZE SLIDING WINDOW
+==================================================
+
+Definition
+----------
+The window size changes depending on a condition.
+
+Sometimes we expand the window.
+Sometimes we shrink it.
+
+There is NO fixed size.
+
+--------------------------------------------------
+
+Example
+
+Find the smallest subarray whose sum is at least 15.
+
+Array
+
+[2,3,1,2,4,3]
+
+Start
+
+[2]
+
+Expand →
+
+[2 3]
+
+Expand →
+
+[2 3 1]
+
+Expand →
+
+[2 3 1 2]
+
+Expand →
+
+[2 3 1 2 4]
+
+Now sum satisfies condition.
+
+Shrink from left
+
+2 [3 1 2 4]
+
+Shrink again
+
+2 3 [1 2 4]
+
+Continue...
+
+Notice:
+
+Window size keeps changing.
+
+--------------------------------------------------
+
+How does it work?
+
+Step 1:
+Expand the right pointer.
+
+Step 2:
+Check if condition is satisfied.
+
+Step 3:
+If yes,
+shrink from the left.
+
+Step 4:
+Repeat until end.
+
+--------------------------------------------------
+
+When to use Variable Window?
+
+Look for words like
+
+✔ At least
+✔ At most
+✔ Longest
+✔ Shortest
+✔ Minimum
+✔ Maximum
+✔ Smallest
+✔ Largest
+✔ Distinct characters
+✔ No repeating characters
+
+--------------------------------------------------
+
+Examples
+
+Longest Substring Without Repeating Characters
+
+Minimum Window Substring
+
+Minimum Size Subarray Sum
+
+Fruit Into Baskets
+
+Longest Repeating Character Replacement
+
+--------------------------------------------------
+
+Advantages
+
+• Solves dynamic-size problems.
+• O(n) for most problems.
+• Efficient for strings and arrays.
+
+--------------------------------------------------
+
+Disadvantages
+
+• More difficult than Fixed Window.
+• Requires careful pointer movement.
+• Conditions can become tricky.
+
+--------------------------------------------------
+
+Complexity
+
+Time : O(n)
+
+Reason:
+Left and right pointers each move at most n times.
+
+Space
+
+Usually O(1)
+
+May become O(k) if HashMap/Set is used.
+
+==================================================
+FIXED vs VARIABLE
+==================================================
+
+Fixed Window
+
+Window Size:
+Fixed
+
+Moves:
+One step each time
+
+Common Questions:
+Exactly K elements
+
+Examples:
+Maximum Sum K
+Maximum Average
+Maximum Vowels
+
+Complexity:
+O(n)
+
+--------------------------------------------------
+
+Variable Window
+
+Window Size:
+Changes dynamically
+
+Moves:
+Expand and shrink
+
+Common Questions:
+Longest
+Shortest
+At least
+At most
+
+Examples:
+Longest Substring
+Minimum Window
+Minimum Size Subarray
+
+Complexity:
+O(n)
+
+==================================================
+How to Identify Sliding Window Problems
+==================================================
+
+If you see words like
+
+✔ Consecutive
+✔ Continuous
+✔ Subarray
+✔ Substring
+✔ Window
+✔ Exactly K
+✔ At most K
+✔ At least K
+✔ Longest
+✔ Shortest
+
+Think of Sliding Window first.
+
+==================================================
+Real World Examples
+==================================================
+
+Fixed Window
+
+• Average temperature of the last 7 days.
+• Last 10 stock prices.
+• Last 30 minutes of CCTV recording.
+• Last 100 network packets.
+
+Variable Window
+
+• Longest period without errors.
+• Smallest amount of data reaching a target size.
+• Longest unique word sequence.
+• Shortest route satisfying a condition.
+
+Key Takeaways :
+
+• Sliding Window is an optimization technique.
+• Mostly used on arrays and strings.
+• Converts many O(n²) solutions into O(n).
+• Two main types:
+    1. Fixed Size
+    2. Variable Size
+• Learn Fixed Window first because Variable Window is built on the same idea.
