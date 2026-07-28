@@ -14,3 +14,12 @@
 # O(n) - Every index is pushed once and popped once.
 # Space Complexity
 # O(n) - Stack + answer array.
+
+# Interview Points :
+# Pattern: Monotonic Decreasing Stack
+# Store: Indices (not temperatures)
+# Why indices? To calculate the number of days (i - prev).
+# Pop condition:
+# temperatures[i] > temperatures[stack[-1]]
+# Answer after popping:
+# ans[prev] = i - prev
