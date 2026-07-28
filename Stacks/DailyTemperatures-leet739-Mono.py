@@ -9,3 +9,8 @@
 # The answer is:
 # current_index - previous_index
 # Push the current day's index onto the stack.
+
+# Time Complexity
+# O(n) - Every index is pushed once and popped once.
+# Space Complexity
+# O(n) - Stack + answer array.
