@@ -15,10 +15,6 @@
 # Space Complexity
 # O(n) - Stack + answer array.
 
-# Daily Temperatures
-# Algorithm: Monotonic Decreasing Stack
-# Time Complexity: O(n)
-# Space Complexity: O(n)
 
 def daily_temperatures(temperatures):
     n = len(temperatures)
