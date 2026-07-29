@@ -12,3 +12,8 @@
 # Push the current element onto the stack.
 # After traversing nums2, the remaining elements in the stack have no greater element, so map them to -1.
 # Traverse nums1 and use the dictionary to build the answer.
+
+# Idea:
+# Instead of searching to the right for every element (which takes O(n²)), process nums2 only once.
+# The stack keeps track of elements waiting for their next greater element. As soon as a larger element appears, it becomes the answer for all smaller elements on top of the stack.
+# Finally, use a hash map to answer each query from nums1 in O(1) time.
