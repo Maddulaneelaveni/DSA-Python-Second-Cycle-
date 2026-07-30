@@ -19,3 +19,4 @@ print(maximum_sum_subarray(nums, k))
 # Complexity
 # Time: O(n)
 # Space: O(1)
+# This is fixed-size sliding window pattern
