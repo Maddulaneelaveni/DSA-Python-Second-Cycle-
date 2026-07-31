@@ -32,3 +32,32 @@
 # If the left character is a vowel, subtract 1.
 # If the new right character is a vowel, add 1.
 # Keep track of the maximum count.
+
+
+# Code :
+
+def max_vowels(s, k):
+    vowels = {'a', 'e', 'i', 'o', 'u'}
+    # Count vowels in first window
+    count = 0
+    for i in range(k):
+        if s[i] in vowels:
+            count += 1
+    max_count = count
+    # Slide the window
+    for i in range(k, len(s)):
+        # Remove left character
+        if s[i - k] in vowels:
+            count -= 1
+        # Add right character
+        if s[i] in vowels:
+            count += 1
+
+        if count > max_count:
+            max_count = count
+
+    return max_count
+# Example
+s = "abciiidef"
+k = 3
+print(max_vowels(s, k))
