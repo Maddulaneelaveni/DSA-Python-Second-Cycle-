@@ -22,3 +22,13 @@
 # iid → 2 vowels
 # ide → 2 vowels
 # def → 1 vowel
+
+# Sliding Window Idea :
+
+# Instead of recounting vowels for every window:
+
+# Count vowels in the first window.
+# Slide the window:
+# If the left character is a vowel, subtract 1.
+# If the new right character is a vowel, add 1.
+# Keep track of the maximum count.
