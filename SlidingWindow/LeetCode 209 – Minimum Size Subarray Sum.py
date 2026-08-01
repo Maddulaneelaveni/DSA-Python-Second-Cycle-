@@ -48,3 +48,7 @@ def min_subarray_length(nums, target):
 nums = [2,3,1,2,4,3]
 target = 7
 print(min_subarray_length(nums, target))
+
+# Complexity
+# Time Complexity: O(n)
+# Space Complexity: O(1)
